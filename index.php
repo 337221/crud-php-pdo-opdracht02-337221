@@ -49,19 +49,19 @@
             <div class="form-group">
                 <label>Kruiden:</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="ppeterselie" name="kruiden[]" value="peterselie">
+                    <input class="form-check-input" type="checkbox" id="ppeterselie" name="kruiden" value="peterselie">
                     <label class="form-check-label" for="peterselie">Peterselie</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="oregano" name="kruiden[]" value="oregano">
+                    <input class="form-check-input" type="checkbox" id="oregano" name="kruiden" value="oregano">
                     <label class="form-check-label" for="oregano">Oregano</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="chili-flakes" name="kruiden[]" value="chili-flakes">
+                    <input class="form-check-input" type="checkbox" id="chili-flakes" name="kruiden" value="chili-flakes">
                     <label class="form-check-label" for="chili-flakes">Chili Flakes</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="zwarte-peper" name="kruiden[]" value="zwarte-peper">
+                    <input class="form-check-input" type="checkbox" id="zwarte-peper" name="kruiden" value="zwarte-peper">
                     <label class="form-check-label" for="zwarte-peper">Zwarte peper</label>
                 </div>
             </div>
