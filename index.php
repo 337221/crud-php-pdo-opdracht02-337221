@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Maak je eigen pizza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
       .container {
         display: flex;
@@ -18,65 +20,53 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2>Maak je eigen pizza</h2>
-      <form>
-        <div class="form-group">
-          <label for="bodemformaat">Bodemformaat</label>
-          <select class="form-control" id="bodemformaat">
-            <option>20 centimeter</option>
-            <option>25 centimeter</option>
-            <option>30 centimeter</option>
-            <option>35 centimeter</option>
-            <option>40 centimeter</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="saus">Saus</label>
-          <select class="form-control" id="saus">
-            <option>Tomatensaus</option>
-            <option>Extra tomatensaus</option>
-            <option>Spicy tomatensaus</option>
-            <option>BBQ saus</option>
-            <option>Creme fraiche</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="pizzatoppings">Pizzatoppings</label><br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="pizzatoppings" id="vegan" value="vegan">
-            <label class="form-check-label" for="vegan">Vegan</label>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Maak je eigen pizza</h1>
+        <form action="create.php" method="post">
+          <div class="field">
+            <label class="label">Bodemformaat</label>
+            <div class="control">
+              <div class="select">
+                <select name="bodemformaat">
+                  <option value="20">20 centimeter</option>
+                  <option value="25">25 centimeter</option>
+                  <option value="30">30 centimeter</option>
+                  <option value="35">35 centimeter</option>
+                  <option value="40">40 centimeter</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="pizzatoppings" id="vegetarisch" value="vegetarisch">
-            <label class="form-check-label" for="vegetarisch">Vegetarisch</label>
+          <div class="field">
+            <label class="label">Saus</label>
+            <div class="control">
+              <div class="select">
+                <select name="saus">
+                  <option value="Tomatensaus">Tomatensaus</option>
+                  <option value="Extra tomatensaus">Extra tomatensaus</option>
+                  <option value="Spicy tomatensaus">Spicy tomatensaus</option>
+                  <option value="BBQ saus">BBQ saus</option>
+                  <option value="Creme fraiche">Creme fraiche</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="pizzatoppings" id="vlees" value="vlees">
-            <label class="form-check-label" for="vlees">Vlees</label>
+          <div class="field">
+            <label class="label">Pizzatoppings</label><br>
+            <input type="radio" name="pizzatopping" value="Vegan"> Vegan<br>
+            <input type="radio" name="pizzatopping" value="Vegetarisch"> Vegetarisch<br>
+            <input type="radio" name="pizzatopping" value="Vlees"> Vlees
           </div>
-        </div>
-        <div class="form-group">
-          <label for="kruiden">Kruiden</label><br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="peterselie">
-            <label class="form-check-label" for="peterselie">Peterselie</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="oregano">
-            <label class="form-check-label" for="oregano">Oregano</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="chiliflakes">
-            <label class="form-check-label" for="chiliflakes">Chili Flakes</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="zwartepeper">
-            <label class="form-check-label" for="zwartepeper">Zwarte peper</label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Bestel</button>
-      </form>
-    </div>
+          <div class="field">
+            <label class="label">Kruiden</label><br>
+            <input type="checkbox" name="kruiden[]" value="Peterselie"> Peterselie<br>
+            <input type="checkbox" name="kruiden[]" value="Oregano"> Oregano<br>
+            <input type="checkbox" name="kruiden[]" value="Chili Flakes"> Chili Flakes<br>
+            <input type="checkbox" name="kruiden[]" value="Zwarte peper"> Zwarte peper<br>
+            <input type="submit" value="Bestel">
+        </form>
+      </div>
+    </section>
   </body>
 </html>
