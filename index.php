@@ -65,8 +65,15 @@
             <input type="checkbox" name="kruiden[]" value="Chili Flakes"> Chili Flakes<br>
             <input type="checkbox" name="kruiden[]" value="Zwarte peper"> Zwarte peper<br>
             <input type="submit" value="Bestel">
+            <br><br><br>  
+            <button class="btn btn-primary"><a href="read.php" class="text-white">Bestellingen Overzicht</a></button>
+            <button class="btn btn-warning"><a href="update.php" class="text-white">Wijzig Bestellingen</a></button>
+            <button class="btn btn-danger"><a href="delete.php" class="text-white">Verwijder Bestellingen</a></button>
         </form>
       </div>
     </section>
   </body>
 </html>
+
+
+
